@@ -5,8 +5,12 @@
   {{ .Content }}
 </div>
 
-{{ if .Site.DisqusShortname -}}
-<h2>Comments</h2>
-{{ template "_internal/disqus.html" . }}
-{{- end }}
+<script src="https://utteranc.es/client.js"
+        repo="meyerzinn/website"
+        issue-term="title"
+        label="post comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 {{- end }}
